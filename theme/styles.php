@@ -304,7 +304,7 @@ function theme_styles_fallback_content($theme) {
     $type = $theme->get_rtl_mode() ? 'all-rtl' : 'all';
     $filename = theme_styles_get_filename($type);
 
-    $fallbacksheet = "{$CFG->tempdir}/theme/{$theme->name}/{$filename}";
+    echo $fallbacksheet = "{$CFG->tempdir}/theme/{$theme->name}/{$filename}";
     if (file_exists($fallbacksheet)) {
         return $fallbacksheet;
     }

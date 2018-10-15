@@ -1,0 +1,73 @@
+#nav-drawer, nav.navbar, #page-footer {
+    background-color: #003e84;
+}
+nav.navbar {
+    background: url(http://moodle.wsyu.org/theme/moove/wsyu_pic/banner.jpg);
+}
+#nav-drawer {
+    background: url(http://moodle.wsyu.org/theme/moove/wsyu_pic/left.jpg);
+}
+#nav-drawer .list-group .list-group-item a:hover {
+    background-color: #ffffff;
+    color: #003e84;
+    font-weight:bold;
+}
+a, nav.navbar .drawer-toggle .nav-link {
+    color: 003e84;
+}
+#top-footer h3 {
+    display:none
+}
+#top-footer h4{
+    font-size: 14px;
+}
+.col-md-7 {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+#nav-drawer .list-group + .list-group {
+    border-top: 0px solid #374850;
+}
+#nav-drawer.closed .list-group .list-group-item:hover {
+    background-color: #0e3983;
+}
+.navbar-brand .d-md-inline {
+    display: none;
+}
+h1 {
+    font-size:0px;
+}
+.sectionname, #frontpage-course-list H2 {
+    font-size:26px;
+}
+.tag-info, #page-admin-index .adminwarning.availableupdatesinfo .moodleupdateinfo.maturity200 .info.release, .assignfeedback_editpdf_widget .label {
+    background-color: #003e84;
+}
+nav.navbar ul.navbar-nav .lang-menu .nav-link .icon-globe,  nav.navbar ul.navbar-nav .lang-menu .nav-link,nav.navbar ul.navbar-nav .popover-region .popover-region-toggle,nav.navbar .moove-search-input i {
+    color: #fff;
+}
+.fixed-top a {
+    color: #fff;
+    }
+   
+   .fixed-top a:hover {
+  
+    }
+     #action-menu-1-menu a{
+         color: #003e84;
+     }
+#page-navbar .breadcrumb li>* {
+    color: #fff;
+    background-color: #003e84;
+    border-color: #003e84;
+}
+#page-navbar .breadcrumb li .no-link {
+    background-color: #8ba7c8;
+    border-color: #8ba7c8;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #003e84;
+    border-color: #003e84;
+}
