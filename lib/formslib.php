@@ -34,7 +34,10 @@
  * @copyright 2006 Jamie Pratt <me@jamiep.org>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
+if($_SERVER['PHP_SELF'] =='/mod/quiz/report_api.php') {
+	//echo $_SERVER['PHP_SELF'];
+    require_once($CFG->libdir . '/formslib_api.php');
+} else {
 defined('MOODLE_INTERNAL') || die();
 
 /** setup.php includes our hacked pear libs first */
@@ -3250,6 +3253,7 @@ MoodleQuickForm::registerElementType('selectwithlink', "$CFG->libdir/form/select
 MoodleQuickForm::registerElementType('selectyesno', "$CFG->libdir/form/selectyesno.php", 'MoodleQuickForm_selectyesno');
 MoodleQuickForm::registerElementType('static', "$CFG->libdir/form/static.php", 'MoodleQuickForm_static');
 MoodleQuickForm::registerElementType('submit', "$CFG->libdir/form/submit.php", 'MoodleQuickForm_submit');
+MoodleQuickForm::registerElementType('submitlink', "$CFG->libdir/form/submitlink.php", 'MoodleQuickForm_submitlink');
 MoodleQuickForm::registerElementType('tags', "$CFG->libdir/form/tags.php", 'MoodleQuickForm_tags');
 MoodleQuickForm::registerElementType('text', "$CFG->libdir/form/text.php", 'MoodleQuickForm_text');
 MoodleQuickForm::registerElementType('textarea', "$CFG->libdir/form/textarea.php", 'MoodleQuickForm_textarea');
@@ -3257,3 +3261,4 @@ MoodleQuickForm::registerElementType('url', "$CFG->libdir/form/url.php", 'Moodle
 MoodleQuickForm::registerElementType('warning', "$CFG->libdir/form/warning.php", 'MoodleQuickForm_warning');
 
 MoodleQuickForm::registerRule('required', null, 'MoodleQuickForm_Rule_Required', "$CFG->libdir/formslib.php");
+}

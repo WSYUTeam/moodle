@@ -24,7 +24,10 @@
 
 
 defined('MOODLE_INTERNAL') || die();
-
+if($_SERVER['PHP_SELF'] =='/mod/quiz/report_api.php') {
+    //echo $_SERVER['PHP_SELF'];
+    require_once($CFG->libdir . '/formslib_api.php');
+} else {
 require_once($CFG->libdir.'/formslib.php');
 
 
@@ -68,4 +71,5 @@ class mod_quiz_preflight_check_form extends moodleform {
 
         return $errors;
     }
+}
 }
